@@ -25,6 +25,16 @@ shareButton.addEventListener("mouseleave", (e) => {
     e.currentTarget.classList.remove('profile-share-bg-change');
     img.classList.remove('share-img');
 })
+returnButton.addEventListener("mouseenter", (e) => {
+    const img = e.currentTarget.querySelector('img');
+    e.currentTarget.classList.add('share-bg-change');
+    img.classList.remove('share-img');
+})
+returnButton.addEventListener("mouseleave", (e) => {
+    const img = e.currentTarget.querySelector('img');
+    e.currentTarget.classList.remove('share-bg-change');
+    img.classList.add('share-img');
+})
 
 shareButton.addEventListener("click", changeSection);
 returnButton.addEventListener('click', changeSection);
