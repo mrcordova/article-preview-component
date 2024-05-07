@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     place-content: center;
-    max-inline-size: clamp(25em, calc(20em + 1.5vw), 40em);
+    max-inline-size: clamp(25em, calc(25em + 1.5vw), 30em);
     background-color: white;
     border-radius: 10px;
 }
@@ -30,6 +30,7 @@ body {
 .card>img {
     border-top-left-radius:10px;
     border-top-right-radius: 10px;
+    max-block-size: 15.3em;
   
 }
 
