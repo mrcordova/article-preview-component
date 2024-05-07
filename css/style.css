@@ -7,23 +7,58 @@
     --body-font-size: 13px;
 }
 
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    /* Ensure body takes at least full viewport height */
     margin: 0;
-    background-color: var(--grayish-blue);
+    font-size: var(--body-font-size);
 }
 .card {
-    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    max-inline-size: clamp(25em, calc(25em + 1.5vw), 35em);
 }
+
 main {
     flex: 1;
+    /* Grow to fill available space */
     display: flex;
-    align-items: center;
     justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    padding: 20px;
+}
+
+footer {
+    margin-top: auto;
+    /* Push footer to the bottom */
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.profile-con {
+    display: flex;
+}
+.profile-pic {
     
 }
+
+.share-con {
+    display: none;
+}
+
+/* Additional styling for body and HTML to fill viewport */
+html {
+    height: 100%;
+}
+
+
 
 
 .manrope-500 {
