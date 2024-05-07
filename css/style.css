@@ -46,7 +46,15 @@ footer {
     display: flex;
 }
 .profile-pic {
-    
+    border-radius: 200px;
+}
+.profile-text-con {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 1em;
+}
+.profile-text-con>p {
+    margin: 0;
 }
 
 .share-con {
