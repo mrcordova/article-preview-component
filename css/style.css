@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     place-content: center;
-    
+    max-inline-size: clamp(25em, calc(20em + 1.5vw), 40em);
     background-color: white;
     border-radius: 10px;
 }
@@ -58,6 +58,14 @@ main {
 }
 .profile-pic {
     border-radius: 200px;
+}
+
+.profile-share-con {
+    border-radius: 100px;
+    padding: 10px;
+    align-self: center;
+
+    background-color: var(--light-grayish-blue);
 }
 .profile-text-con {
     display: flex;
