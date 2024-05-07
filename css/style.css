@@ -64,7 +64,7 @@ main {
     border-radius: 100px;
     padding: 10px;
     align-self: center;
-
+    margin-left: auto;
     background-color: var(--light-grayish-blue);
 }
 .profile-text-con {
