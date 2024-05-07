@@ -97,12 +97,10 @@ main {
 }
 
 .share-con>img {
-    margin: auto;
+    margin-inline-start: 20px;
 }
 .share-con>p {
-    display: flex;
-    justify-self: center;
-    align-self: center;
+    margin: 0;
 }
 
 .text-sect {
