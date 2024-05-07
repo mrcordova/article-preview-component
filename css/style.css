@@ -77,6 +77,7 @@ main {
 }
 .profile-text-name {
     color: var(--very-dark-grayish-blue);
+    padding-bottom: 5px;
 }
 .share-con {
     display: none;
