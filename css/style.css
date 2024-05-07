@@ -83,9 +83,9 @@ main {
     padding: 10px;
 }
 
-/* .profile-share-con:is(:hover, :focus) {
+ .profile-share-bg-change {
     background-color: var(--desaturated-dark-blue);
-} */
+}  
 
 .share-img {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(128deg) brightness(100%) contrast(103%);
