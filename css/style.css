@@ -4,6 +4,7 @@
     --grayish-blue: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
 
+    --red: red;
     --body-font-size: 13px;
 }
 
@@ -42,6 +43,14 @@ footer {
     background-color: #f0f0f0;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
 main {
     flex: 1;
     /* Grow to fill available space */
@@ -54,8 +63,7 @@ main {
 }
 
 .profile-con {
-    display: flex;
-    padding-block-start: 30px;
+
     padding-block-end: 20px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
@@ -65,11 +73,35 @@ main {
 }
 
 .profile-share-con {
-    border-radius: 100px;
-    padding: 10px;
+    border-radius: 50px;
     align-self: center;
-    margin-left: auto;
+    margin-inline-start: auto;
     background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* .profile-share-con:is(:hover, :focus) {
+    background-color: var(--desaturated-dark-blue);
+} */
+
+.share-img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(128deg) brightness(100%) contrast(103%);
+}
+
+
+
+.profile-share-con-click {
+    border-radius: 50px;
+    align-self: center;
+    margin-inline-start: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;        
+    padding: 10px;
+    background-color: var(--desaturated-dark-blue);
 }
 .profile-text-con {
     display: flex;
@@ -83,8 +115,10 @@ main {
     color: var(--very-dark-grayish-blue);
     padding-bottom: 5px;
 }
-.share-con {
-    display: flex;
+
+
+.share-con-click {
+
     justify-content: center;
     align-items: center;
     padding-inline-start: 20px;
@@ -96,10 +130,10 @@ main {
     background-color: var(--very-dark-grayish-blue);
 }
 
-.share-con>img {
+.share-con-click>img {
     margin-inline-start: 15px;
 }
-.share-con>p {
+.share-con-click>p {
     margin: 0;
     letter-spacing: 0.35em;
 }
@@ -121,6 +155,8 @@ main {
 .text-sect>p {
     padding-inline-start: 20px;
     padding-inline-end: 20px;
+    
+    padding-block-end: 20px;
     
 }
 
