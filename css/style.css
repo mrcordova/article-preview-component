@@ -97,10 +97,11 @@ main {
 }
 
 .share-con>img {
-    margin-inline-start: 20px;
+    margin-inline-start: 15px;
 }
 .share-con>p {
     margin: 0;
+    letter-spacing: 0.35em;
 }
 
 .text-sect {
