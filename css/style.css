@@ -23,24 +23,28 @@ body {
     display: flex;
     flex-direction: column;
     place-content: center;
-    max-inline-size: clamp(25em, calc(25em + 1.5vw), 60em);
+    max-inline-size: clamp(25em, calc(53em + 1.5vw), 60em);
     background-color: white;
     border-radius: 10px;
 }
 
-.card>img {
+.card>.img-con>img {
     border-top-left-radius:10px;
     border-top-right-radius: 10px;
-    max-block-size: 15.3em;
+    
+    /* max-block-size: clamp(15.3em, calc(15.3em + 1.5vw), 30em); */
+    
   
 }
-
 footer {
     margin-top: auto;
     /* Push footer to the bottom */
     text-align: center;
     padding: 10px;
     background-color: #f0f0f0;
+}
+.img-con {
+    display: flex;
 }
 
 .hide {
@@ -175,7 +179,22 @@ html {
 }
 
 
-
+@media(min-width: 46em) {
+    .card {
+        flex-direction: row;
+    }
+    .card>.img-con>img {
+        
+            border-top-left-radius: 10px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+    
+            /* max-block-size: clamp(15.3em, calc(15.3em + 1.5vw), 30em); */
+    
+    
+    }
+}
 
 .manrope-500 {
     font-family: "Manrope", sans-serif;
