@@ -84,7 +84,8 @@ main {
     display: flex;
     justify-items: center;
     align-items: center;
-    padding: 10px;
+    padding-inline: 10px;
+    padding-block: 10px;
 }
 
  .profile-share-bg-change {
@@ -146,9 +147,10 @@ main {
 .share-con-click>img {
     margin-inline-start: 15px;
 }
-.share-con-click>p {
+.share {
     margin: 0;
     letter-spacing: 0.35em;
+    color: var(--grayish-blue);
 }
 
 .text-sect {
@@ -178,6 +180,10 @@ html {
     height: 100%;
 }
 
+.tooltiptext {
+    display: none;
+}
+
 
 @media(min-width: 46em) {
     .card {
@@ -189,6 +195,59 @@ html {
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;    
     }
+        .profile-share-con {
+           
+            
+            padding-block: 7px;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+           
+        }
+    
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 250px;
+            background-color: var(--very-dark-grayish-blue);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 150%;
+            left: 50%;
+            margin-inline-start: -125px;
+        }
+    
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -15px;
+            border-width: 15px;
+            border-style: solid;
+            
+            border-color: var(--very-dark-grayish-blue) transparent transparent transparent;
+        }
+    
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            display: flex;
+            justify-content: space-around;
+            align-items: space-around;
+            padding-inline: 20px;
+            padding-block: 15px;
+        }
+        .tooltip:hover .tooltiptext>p {
+            margin: 0;
+            
+        }
+
+        
 }
 
 .manrope-500 {
