@@ -86,13 +86,15 @@ main {
  .profile-share-bg-change {
     background-color: var(--desaturated-dark-blue);
 }  
- .share-bg-change {
-    background-color: var(--light-grayish-blue);
-}  
+
 
 .share-img {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(128deg) brightness(100%) contrast(103%);
 }
+
+/* .share-img-focus {
+    filter: invert(50%) sepia(35%) saturate(253%) hue-rotate(174deg) brightness(92%) contrast(95%);
+} */
 
 
 
@@ -106,6 +108,10 @@ main {
     padding: 10px;
     background-color: var(--desaturated-dark-blue);
 }
+
+.profile-share-con-bg-focus {
+     background-color: white;
+ }
 .profile-text-con {
     display: flex;
     flex-direction: column;

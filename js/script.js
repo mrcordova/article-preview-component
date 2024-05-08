@@ -17,6 +17,7 @@ const changeSection = (e) => {
 
 shareButton.addEventListener("mouseenter", (e) => {
     const img = e.currentTarget.querySelector('#profile-svg');
+   
     e.currentTarget.classList.add('profile-share-bg-change');
     img.classList.add('share-img');
 })
@@ -26,13 +27,14 @@ shareButton.addEventListener("mouseleave", (e) => {
     img.classList.remove('share-img');
 })
 returnButton.addEventListener("mouseenter", (e) => {
-    const img = e.currentTarget.querySelector('img');
-    e.currentTarget.classList.add('share-bg-change');
+    const img = e.currentTarget.querySelector('#share-svg');
+    e.currentTarget.classList.add('profile-share-con-bg-focus');   
     img.classList.remove('share-img');
+
 })
 returnButton.addEventListener("mouseleave", (e) => {
-    const img = e.currentTarget.querySelector('img');
-    e.currentTarget.classList.remove('share-bg-change');
+    const img = e.currentTarget.querySelector('#share-svg');
+    e.currentTarget.classList.remove('profile-share-con-bg-focus');
     img.classList.add('share-img');
 })
 
